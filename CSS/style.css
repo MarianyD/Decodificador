@@ -1,0 +1,176 @@
+:root {
+
+    --cor-de-fundo-principal: #EFF1FA;
+    --cor-de-fundo-secundaria: #E9ECF8;
+    --cor-de-fundo-terciaria: #FFFFFF;
+    --cor-da-fonte: #0a3871;
+    --cor-da-fonte-secundaria: #FFFFFF;
+    --cor-da-mensagem:#343a40;
+    --cor-do-texto: #495057;
+    --cor-do-botao-criptografar: #0A3871;
+    --cor-da-animacao-botao-criptografar: #072B61;
+    --cor-do-botao-descriptografar: #d8dfe8;
+    --cor-borda-botao-descriptografar: #0A3871;
+    --cor-da-animacao-botao-descriptografar: #EFF1FA;
+    --fonte-principal: 'Inter';
+}
+
+body {
+
+    background-color: var(--cor-de-fundo-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-da-fonte);
+}
+
+header {
+
+    padding: 40px 0 0 84px;
+}
+
+h1 {
+    
+    display: flex;
+    align-items: flex-start;
+}
+
+.caixa-decodificador {
+
+    display: flex;
+    align-items: flex-start;
+    padding: 80px 80px 490px 240px;
+}
+
+.texto-decodificador {
+
+    display:flex;
+}
+
+.botoes {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 156px 240px;
+}
+
+.divisoria-aviso {
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.divisoria-aviso p {
+
+    padding-left: 8px;
+    color: var(--cor-do-texto);
+}
+
+.divisoria-botoes {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 0;
+    gap: 8px;
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.botao-criptografar {
+    
+    width: 328px;
+    height: 67px;
+    background: var(--cor-do-botao-criptografar);
+    border: none;
+    border-radius: 24px;
+    color: var(--cor-da-fonte-secundaria);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    
+}
+
+.botao-criptografar:hover {
+
+    background: var(--cor-da-animacao-botao-criptografar);
+    transform: scale(1.02);        
+}
+
+.botao-descriptografar {
+
+    
+    width: 328px;
+    height: 67px;
+    background: var(--cor-do-botao-descriptografar);
+    color: var(--cor-da-fonte);
+    font-family: 'Inter';
+    font-style: normal;    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid var(--cor-borda-botao-descriptografar);
+    border-radius: 24px;
+    cursor: pointer;
+    
+}
+
+.botao-descriptografar:hover {
+
+    background: var(--cor-da-animacao-botao-descriptografar);
+    transform: scale(1.02);        
+}
+
+.caixa-criptografado {
+
+    width: 400px;
+    height: 944px;
+    border-radius: 32px;
+    background: var(--cor-de-fundo-terciaria);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    margin: 0 40px;
+
+    position: absolute;
+    top: 40px;
+    right: 0;
+    
+}
+
+.divisoria-criptografado {
+
+    text-align: center;
+    padding: 243px 32px 243px 32px;
+}
+
+.img-lupa {
+
+    padding: 0 0 32px;
+}
+
+.divisoria-criptografado h2{
+
+    margin: 0 0 1em;
+    color: var(--cor-da-mensagem);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: bold;
+}
+
+.divisoria-criptografado p {
+    
+    color: var(--cor-do-texto);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
